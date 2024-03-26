@@ -6,7 +6,7 @@ const Navbar = () => {
     <>
       <nav className="navbar navbar-expand-lg bg-dark navbar-dark sticky-top">
         <div className="container-fluid">
-          <Link className="navbar-brand" to="/">
+          <Link className={`nav-brand ${loc === "/general" ? "active" : ""}`}  to="/">
             News-WEB-App
           </Link>
           <button
@@ -23,44 +23,44 @@ const Navbar = () => {
           <div className="collapse navbar-collapse" id="navbarSupportedContent">
             <ul className="navbar-nav me-auto mb-2 mb-lg-0">
               <li className="nav-item">
-                <Link className="nav-link " aria-current="page" to="/">
+                <Link className={`nav-link ${loc === "/" ? "active" : ""}`} aria-current="page" to="/">
                   Home
                 </Link>
               </li>
 
               <li className="nav-item">
-                <Link className="nav-link" to="/business">
+                <Link className={`nav-link ${loc === "/business" ? "active" : ""}`} to="/business">
                   Business
                 </Link>
               </li>
               <li className="nav-item">
-                <Link className="nav-link" to="/entertainment">
+                <Link className={`nav-link ${loc === "/entertainment" ? "active" : ""}`} to="/entertainment">
                   Entertainment
                 </Link>
               </li>
 
               <li className="nav-item">
-                <Link className="nav-link" to="/health">
+                <Link  className={`nav-link ${loc === "/health" ? "active" : ""}`} to="/health">
                   Health
                 </Link>
               </li>
               <li className="nav-item">
-                <Link className="nav-link" to="/general">
+                <Link className={`nav-link ${loc === "/general" ? "active" : ""}`} to="/general">
                   General
                 </Link>
               </li>
               <li className="nav-item">
-                <Link className="nav-link" to="/science ">
+                <Link className={`nav-link ${loc === "/science" ? "active" : ""}`} to="/science ">
                   Science
                 </Link>
               </li>
               <li className="nav-item">
-                <Link className="nav-link" to="/sports">
+                <Link className={`nav-link ${loc === "/sports" ? "active" : ""}`} to="/sports">
                   Sports
                 </Link>
               </li>
               <li className="nav-item">
-                <Link className="nav-link" to="/technology">
+                <Link className={`nav-link ${loc === "/technology" ? "active" : ""}`} to="/technology">
                   Technology
                 </Link>
               </li>
